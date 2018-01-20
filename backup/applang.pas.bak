@@ -1,0 +1,86 @@
+unit AppLang;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  {$IFDEF Windows}Windows,{$ELSE}LCLIntf, LCLType,{$ENDIF} Classes, SysUtils,
+  Forms, IniFiles, LResources, DefaultTranslator, ShlObj;
+
+function GetWindowsLanguage(LCTYPE: LCTYPE {type of information}): string;
+function GetAppDataDirectory(): String;
+
+var
+ LANG: String = 'Polski';
+ appINI: TIniFile;
+ I: Integer;
+
+const
+  AppLangs: array[0..1, 0..1] of String = (
+    ('pl', 'Polski'),
+    ('en', 'English')
+  );
+
+implementation
+
+function GetWindowsLanguage(LCTYPE: LCTYPE {type of information}): string;
+var
+ Buffer : PChar;
+ Size : integer;
+begin
+ Size := GetLocaleInfo (LOCALE_USER_DEFAULT, LCType, nil, 0);
+ GetMem(Buffer, Size);
+ try
+   GetLocaleInfo (LOCALE_USER_DEFAULT, LCTYPE, Buffer, Size);
+   Result := string(Buffer);
+ finally
+   FreeMem(Buffer);
+ end;
+end;
+
+function GetAppDataDirectory(): String;
+var
+  Folder: array[0..MAX_PATH] of Char;
+  appDataPath: String;
+begin
+  SHGetSpecialFolderPath(0, Folder, CSIDL_APPDATA , False);
+
+  appDataPath := Folder;
+  if (appDataPath <> '') then begin
+    if (DirectoryExists(appDataPath + '\PAR Kit\') = False) then begin
+      try
+        CreateDir(appDataPath + '\PAR Kit\');
+      except
+        ShowMessage('Wystąpił błąd podczas tworzenia katalogu z ustawieniami.');
+      end;
+    end;
+
+    appDataPath := appDataPath + '\PAR Kit\';
+  end else
+    appDataPath := ExtractFilePath(Application.ExeName);
+
+  Result := appDataPath;
+end;
+
+initialization
+  try
+    appINI := TINIFile.Create(GetAppDataDirectory() + 'parkit.ini');
+    LANG := appINI.ReadString('App', 'Language', 'Polski');
+    appINI.Free;
+  except
+    LANG := 'Polski';
+  end;
+
+  for I := 0 to High(AppLangs) do begin
+    if (LANG = AppLangs[I][1]) then begin
+      LANG := AppLangs[I][0];
+      break;
+    end;
+  end;
+
+  if ((LANG <> 'pl') and FileExists(GetAppDataDirectory() + 'languages/parkit.' + LANG + '.po')) then
+    LRSTranslator := TPoTranslator.Create(GetAppDataDirectory() + 'languages/parkit.' + LANG + '.po');
+
+end.
+

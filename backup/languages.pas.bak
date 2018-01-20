@@ -1,0 +1,32 @@
+unit languages;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  LResources, Translations;
+
+function TranslateUnitResourceStrings: boolean;
+
+implementation
+
+function TranslateUnitResourceStrings: boolean;
+var
+  r: TLResource;
+  POFile: TPOFile;
+begin
+  r:=LazarusResources.Find('picknic.en', 'PO');
+  POFile:=TPOFile.Create;
+  try
+    POFile.ReadPOText(r.Value);
+    Result:=Translations.TranslateUnitResourceStrings('main', POFile);
+  finally
+    POFile.Free;
+  end;
+end;
+
+initialization
+  {$I picknic.lrs}
+
+end.

@@ -1,0 +1,353 @@
+object FDesktop: TFDesktop
+  Left = 1076
+  Height = 347
+  Top = 454
+  Width = 573
+  ActiveControl = PBalloon
+  BorderStyle = bsNone
+  Caption = 'Desktop'
+  ClientHeight = 347
+  ClientWidth = 573
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyPress = FormKeyPress
+  OnMouseDown = FormMouseDown
+  OnMouseMove = FormMouseMove
+  OnMouseUp = FormMouseUp
+  OnMouseWheel = FormMouseWheel
+  OnPaint = FormPaint
+  OnShow = FormShow
+  Position = poDesktopCenter
+  ShowInTaskBar = stNever
+  LCLVersion = '0.9.31'
+  object IScreen: TImage
+    Left = 0
+    Height = 347
+    Top = 0
+    Width = 573
+    Align = alClient
+    OnMouseDown = FormMouseDown
+    OnMouseMove = FormMouseMove
+    OnMouseUp = FormMouseUp
+    OnMouseWheel = FormMouseWheel
+  end
+  object IBottom: TImage
+    Left = 8
+    Height = 21
+    Top = 315
+    Width = 15
+    OnMouseDown = FormMouseDown
+    OnMouseMove = FormMouseMove
+    OnMouseUp = FormMouseUp
+    OnMouseWheel = FormMouseWheel
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B477261706869637E03000089504E47
+      0D0A1A0A0000000D494844520000000F00000014080600000052C76712000000
+      097048597300000B1200000B1201D2DD7EFC0000003B74455874436F6D6D656E
+      7400456469746564206279205061756C20536865726D616E20666F7220575043
+      6C69706172742C205075626C696320446F6D61696E70277A00000002E9494441
+      54388D85934B885C451486BF73AAA6BB279DC8A88C0EC411E36A8C884230311A
+      C18D6E7CA024881B71A3A8684014D46C4C5470A92ED48D642164E1083E16A22E
+      22644C04C1808893604054641EDD333D9DE9E7EDDBF7561D17DD1D7AD4E0BF3C
+      FC5FFDE7549D120612C004CAA5ED577D5E9EDA396D163210013311E79356A595
+      B4D61F8991FAC8EF19D1E2300BE1BAB9BBE71E7CE18BD97ED28BA24E2D062B96
+      4BF2F5FB8FD7CE7F7F220E7D00E890B54130BDA4B95601F08562747E22BA8942
+      1081A4595D031A60A3BC4B30862940AFBDB1DEEFA58088C5A82092A546AF5DAB
+      036603C6B6C0C33948BB9B957ED242143340542C4B3B24ED8DCA3046FE953CEA
+      264D1ACB69B78E2A98455421ED6ED24F1A2B43DF7FC01820842CAD24AD1AE206
+      4D8A42AFBD41967656B7A40C610778C0892821B2D26D565145CC22EA2069AD93
+      65F98A8832EE572000B9A8CBC579806AD2AC80A098218226CD2A4045D423EA72
+      2007822F168BEF203EF47B9D33869C051AEDFA5218269808DAAA2F016C98C519
+      62D85B2C6DDB8F85299FA6E94F73FB0F7D74D381275E5A3A7F325BBEB0B08A38
+      B30888881980C4995D7B3EDB3977CFCCECCDF7167E3BFB298BA73E3C2C008589
+      D25B8F1E3D7564D76DFBF2F6C5E063D0D1CB5DBA4C55A37CA5E6CB177EF11FBF
+      76E0BDA4DB3C2C228A592C4C5D73E3E9C78EFDB0B7B47D3A8FC1BCC85618913C
+      4F9B7EFE8DBBCED59616F7896847CDA28ABAFEE6DAEF4F2D9C78B13351C463D1
+      C6486208569CC49F997F25AB2D2D3E29EA3B66D1B9C1669A1775ABEB7FFD5C2F
+      4FCD3E70FDEE3DB1DFCB5554892167F20A1FCE7D37AFA7E75F3D22EA3EB1183C
+      10DCE8700C07FCB8F2EBC2EE1B6E7DE8961D575F9BE7FD5C274A3E5CACFCE1BF
+      7CF7E05759DA796EB81BE19F1B16451CBD6EE3F993C79FFE33E49957A70170DF
+      1E7FB6DA69AE3D23EA065FE33272A21EE0BEDBEF7FD98E7D63F99D87DE34E0A0
+      0EEAFEB2E4501EA050DCF6FA1D0F1FB5C9F2D4DBE3F5FF9300A8EA0E15F94055
+      A7C7EBE3FA1B0BE76800C0B671AA0000000049454E44AE426082
+    }
+  end
+  object PMeasure: TPanel
+    Left = 192
+    Height = 186
+    Top = 8
+    Width = 170
+    ClientHeight = 186
+    ClientWidth = 170
+    ParentColor = False
+    TabOrder = 1
+    Visible = False
+    OnClick = PMeasureClick
+    OnMouseDown = PMeasureMouseDown
+    OnMouseMove = FormMouseMove
+    object GBMeasurement: TGroupBox
+      Left = 8
+      Height = 81
+      Top = 4
+      Width = 154
+      Caption = 'Wymiary'
+      ClientHeight = 63
+      ClientWidth = 150
+      TabOrder = 1
+      OnClick = PMeasureClick
+      OnMouseDown = PMeasureMouseDown
+      OnMouseMove = FormMouseMove
+      object LWidthCaption: TLabel
+        Left = 4
+        Height = 14
+        Top = 4
+        Width = 53
+        Caption = 'Szerokość:'
+        ParentColor = False
+        OnClick = PMeasureClick
+        OnMouseDown = PMeasureMouseDown
+        OnMouseMove = FormMouseMove
+      end
+      object LHeightCaption: TLabel
+        Left = 4
+        Height = 14
+        Top = 24
+        Width = 53
+        Caption = 'Wysokość:'
+        ParentColor = False
+        OnClick = PMeasureClick
+        OnMouseDown = PMeasureMouseDown
+        OnMouseMove = FormMouseMove
+      end
+      object LDiagonalCaption: TLabel
+        Left = 4
+        Height = 14
+        Top = 44
+        Width = 53
+        Caption = 'Przekątna:'
+        ParentColor = False
+        OnClick = PMeasureClick
+        OnMouseDown = PMeasureMouseDown
+        OnMouseMove = FormMouseMove
+      end
+      object LHeight: TLabel
+        Left = 111
+        Height = 14
+        Top = 24
+        Width = 36
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = '0'
+        ParentColor = False
+        OnClick = PMeasureClick
+        OnMouseDown = PMeasureMouseDown
+        OnMouseMove = FormMouseMove
+      end
+      object LWidth: TLabel
+        Left = 111
+        Height = 14
+        Top = 4
+        Width = 36
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = '0'
+        ParentColor = False
+        OnClick = PMeasureClick
+        OnMouseDown = PMeasureMouseDown
+        OnMouseMove = FormMouseMove
+      end
+      object LDiagonal: TLabel
+        Left = 111
+        Height = 14
+        Top = 44
+        Width = 36
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = '0'
+        ParentColor = False
+        OnClick = PMeasureClick
+        OnMouseDown = PMeasureMouseDown
+        OnMouseMove = FormMouseMove
+      end
+    end
+    object GBCoordinates: TGroupBox
+      Left = 8
+      Height = 60
+      Top = 88
+      Width = 154
+      Caption = 'Współrzędne'
+      ClientHeight = 42
+      ClientWidth = 150
+      TabOrder = 0
+      OnClick = PMeasureClick
+      OnMouseDown = PMeasureMouseDown
+      OnMouseMove = FormMouseMove
+      object LBegCaption: TLabel
+        Left = 4
+        Height = 14
+        Top = 4
+        Width = 48
+        Caption = 'Początek:'
+        ParentColor = False
+        OnClick = PMeasureClick
+        OnMouseDown = PMeasureMouseDown
+        OnMouseMove = FormMouseMove
+      end
+      object LEndCaption: TLabel
+        Left = 4
+        Height = 14
+        Top = 24
+        Width = 36
+        Caption = 'Koniec:'
+        ParentColor = False
+        OnClick = PMeasureClick
+        OnMouseDown = PMeasureMouseDown
+        OnMouseMove = FormMouseMove
+      end
+      object LBegCoordinates: TLabel
+        Left = 63
+        Height = 14
+        Top = 4
+        Width = 84
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = '(0,0)'
+        ParentColor = False
+        OnClick = PMeasureClick
+        OnMouseDown = PMeasureMouseDown
+        OnMouseMove = FormMouseMove
+      end
+      object LEndCoordinates: TLabel
+        Left = 63
+        Height = 14
+        Top = 24
+        Width = 84
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = '(0,0)'
+        ParentColor = False
+        OnClick = PMeasureClick
+        OnMouseDown = PMeasureMouseDown
+        OnMouseMove = FormMouseMove
+      end
+    end
+    object BExit: TButton
+      Left = 8
+      Height = 21
+      Top = 156
+      Width = 154
+      Caption = 'Zakończ'
+      OnClick = BExitClick
+      OnMouseMove = FormMouseMove
+      TabOrder = 2
+    end
+  end
+  object PBalloon: TPanel
+    Left = 8
+    Height = 131
+    Top = 8
+    Width = 104
+    ClientHeight = 131
+    ClientWidth = 104
+    ParentColor = False
+    TabOrder = 0
+    OnMouseMove = FormMouseMove
+    object IZoom: TImage
+      AnchorSideRight.Side = asrBottom
+      Left = 2
+      Height = 100
+      Top = 2
+      Width = 100
+      Anchors = [akTop, akLeft, akRight]
+      OnMouseMove = FormMouseMove
+    end
+    object LPosition: TLabel
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Side = asrBottom
+      Left = 82
+      Height = 12
+      Top = 117
+      Width = 20
+      Alignment = taRightJustify
+      Anchors = [akRight, akBottom]
+      Caption = '(0,0)'
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      ParentColor = False
+      ParentFont = False
+      OnMouseMove = FormMouseMove
+    end
+    object LColor: TLabel
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Side = asrBottom
+      Left = 2
+      Height = 12
+      Top = 117
+      Width = 38
+      Anchors = [akLeft, akBottom]
+      Caption = '#000000'
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      ParentColor = False
+      ParentFont = False
+      OnMouseMove = FormMouseMove
+    end
+    object PColor: TPanel
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Side = asrBottom
+      Left = 2
+      Height = 12
+      Top = 104
+      Width = 100
+      Anchors = [akLeft, akRight, akBottom]
+      BevelOuter = bvNone
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      ParentFont = False
+      TabOrder = 0
+      OnMouseMove = FormMouseMove
+    end
+  end
+  object ILeft: TImage
+    Left = 8
+    Height = 15
+    Top = 288
+    Width = 21
+    OnMouseDown = FormMouseDown
+    OnMouseMove = FormMouseMove
+    OnMouseUp = FormMouseUp
+    OnMouseWheel = FormMouseWheel
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B477261706869634E03000089504E47
+      0D0A1A0A0000000D49484452000000140000000F0806000000E498EF55000000
+      097048597300000B1200000B1201D2DD7EFC0000003B74455874436F6D6D656E
+      7400456469746564206279205061756C20536865726D616E20666F7220575043
+      6C69706172742C205075626C696320446F6D61696E70277A00000002B9494441
+      54388D7D534B48955110FE66CEF9FF73FFEBF52A3E6F66112D7A291545D15383
+      2CB220AA458249101118B54BA3452F228AA8082A2ADBD5A665442D2A828A5A98
+      105888182D42ED2112BDAEA9D77BFE332DBAD6ADAECD6A98EFCCCC3767E60326
+      3626E2717FBB31E65CC657FFC9014F10D7C4CA8938DFF72227662DDD760DA4C3
+      0C4613E4502E8C0052C40A00E616964D7FD674BC5D36B7DE170236112B05C000
+      D00069106910292226A27F89ABAC60F3EC654D43CD9706E5D01D492FDAB07F8C
+      5857B236F8F92627C90801793A832A626DC5D9D248B4E0E2CAC6B35BE7AFD989
+      740A76E873A8DFBD7ADC27CEC6C5D9A500CA15A3427926618282C9265A9888C4
+      8A4B837859E26DCF939EEC566B27CF58D156B7B36D5A62FA9C70241932888908
+      68BF79C442428A1555AA209E40345E8E20BF04265A043FC8871F310080EB07E6
+      766A66CED75EA4655EDDDEC3CB1B8E4369CF0E7FB39A95FED5A9A6F198CE2C5C
+      2070CE4124049C03C4815C2862C7522C12A635444E2DA86FDDBDAEF968F879C0
+      616CE4CF620030924C01220280324B008840C43F57CBEC881503448A983B3EF6
+      75EAE1A45D36B5AA9695E6304C5B26FE7D51414CC30F3479463BEDEB909572CC
+      EC40E4000820E2424B5D8FDADE2B1119B6E9D17BFDDD0FBB3EBC6EAFAD98B93C
+      3F5E5A6CD3A396888900A0E3D669D7DFFD94BE0CF452F2D320A7BE2739B49689
+      9895F6D933CCCAD3F4E241DBE0F8312A666D9DB353F2E26557566D3FBFBEAAA6
+      01A9115826A76F1C59DC37F0E6F91600C500129EA72B3C9337C90F0A2A825871
+      22122B290AE2E565BD5DF7BAB3BF4A670E1A005AE7AD6E1EDB73F5AB1CBC2DE9
+      85F5FB52C43AC1CA47961CB38D001432A3E86F8041C499C24B4A2AABBB769C79
+      299B5AEE0A011B73284581988918B994F2175B0D007941347EA17AD52E3191E8
+      C9716C028639B59C6D2A6BBCBDC698CBE3F1FF25FD00B13FE0D001845B1F0000
+      000049454E44AE426082
+    }
+  end
+end

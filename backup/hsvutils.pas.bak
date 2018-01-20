@@ -1,0 +1,185 @@
+unit ColorsUtils;
+
+interface
+uses
+  Graphics, Windows;
+
+type
+  THSVColor = record
+    Hue: Word;
+    Saturation: Word;
+    Value: Word;
+  end;
+
+  TRGBColor = record
+    Red: Byte;
+    Green: Byte;
+    Blue: Byte;
+  end;
+
+function TColorToRGBColor(const Color: TColor): TRGBColor;
+function RGBToRGBColor(const r, g, b: Integer): TRGBColor;
+function RGBColorToColor(const Color: TRGBColor): TColor;
+
+function HSVtoRGBColor(const h, s, v: Integer): TRGBColor;
+function HSVToHSVColor(const h, s, v: integer): THSVColor;
+procedure RGBColorToHSV (const Color: TRGBColor; var h, s, v: Integer);
+
+procedure TColorToHSV(const RGB: TColor; out h, s, v: Integer);
+function HSVToColor(const h, s, v: Integer): TColor;
+
+implementation
+
+function TColorToRGBColor(const Color: TColor): TRGBColor;
+var
+  r, g, b: Byte;
+begin
+  r := GetRValue(Color);
+  g := GetGValue(Color);
+  b := GetBValue(Color);
+
+  Result := RGBToRGBColor(r, g, b);
+end;
+
+function RGBToRGBColor(const r, g, b: Byte): TRGBColor;
+begin
+  with Result do begin
+    Red := r;
+    Green := g;
+    Blue := b;
+  end;
+end;
+
+function RGBColorToColor(const Color: TRGBTriple): TColor;
+begin
+  Result := RGB(Color.Red, Color.Green, Color.Blue);
+end;
+
+function HSVToHSVColor(const h, s, v: integer): THSVColor;
+begin
+  with Result do begin
+    Hue := h;
+    Saturation := s;
+    Value := v;
+  end;
+end;
+
+procedure TColorToHSV(const RGB: TColor; out h, s, v: Integer);
+begin
+  RGBTripleToHSV(ColorToRGBTriple(RGB), h, s, v);
+
+  S := Round((S * 100) / 255);
+  V := Round((V * 100) / 255);
+end;
+
+function HSVToColor(const h, s, v: Integer): TColor;
+var
+  St, Vt: Integer;
+begin
+  St := Round((S * 255) / 100);
+  Vt := Round((V * 255) / 100);
+
+  Result := RGBTripleToColor(HSVtoRGBColor(H, St, Vt));
+end;
+
+{
+  Floating point fractions, 0..1, replaced with integer values, 0..255.
+  Use integer conversion ONLY for one-way, or a single final conversions.
+  Use floating-point for converting reversibly (see HSVtoRGB above).
+
+  H = 0 to 360 (corresponding to 0..360 degrees around hexcone)
+      0 (undefined) for S = 0
+  S = 0 (shade of gray) to 255 (pure color)
+  V = 0 (black) to 255 (white)
+}
+function HSVtoRGBColor(const h, s, v: Integer): TRGBColor;
+const
+  divisor: Integer = 255*60;
+var
+  f: Integer;
+  hTemp: Integer;
+  p, q, t: Integer;
+  VS: Integer;
+begin
+  if S = 0 then
+    Result := RGBtoRGBColor(V, V, V)  // achromatic:  shades of gray
+  else begin                           // chromatic color
+    if H = 360 then
+      hTemp := 0
+    else
+      hTemp := H;
+
+    f := hTemp MOD 60;      // f is IN [0, 59]
+    hTemp := hTemp DIV 60;  // h is now IN [0,6)
+
+    VS := V*S;
+    p := V - VS DIV 255;                 // p = v * (1 - s)
+    q := V - (VS*f) DIV divisor;         // q = v * (1 - s*f)
+    t := V - (VS*(60 - f)) DIV divisor;  // t = v * (1 - s * (1 - f))
+
+    case hTemp of
+      0:   Result := RGBtoRGBColor(V, t, p);
+      1:   Result := RGBtoRGBColor(q, V, p);
+      2:   Result := RGBtoRGBColor(p, V, t);
+      3:   Result := RGBtoRGBColor(p, q, V);
+      4:   Result := RGBtoRGBColor(t, p, V);
+      5:   Result := RGBtoRGBColor(V, p, q);
+      else Result := RGBtoRGBColor(0,0,0)  // should never happen;
+                                            // avoid compiler warning
+    end;
+  end;
+end {HSVtoRGBTriple};
+
+
+{
+  RGB, each 0 to 255, to HSV.
+    H = 0 to 360 (corresponding to 0..360 degrees around hexcone)
+    S = 0 (shade of gray) to 255 (pure color)
+    V = 0 (black) to 255 (white)
+
+  Based on C Code in "Computer Graphics -- Principles and Practice,"
+  Foley et al, 1996, p. 592.  Floating point fractions, 0..1, replaced with
+  integer values, 0..255.
+}
+procedure RGBColorToHSV (const Color: TRGBColor; var h, s, v: Integer);
+var
+  Delta: Integer;
+  Minimum: Integer;
+begin
+  with Color do begin
+    Minimum := Min(Min(Red, Green), Blue);
+    V := Max(Max(Red, Green), Blue);
+  end;
+
+  Delta := V - Minimum;
+
+  // Calculate saturation:  saturation is 0 if r, g and b are all 0
+  if V = 0 then
+    S := 0
+  else
+    S := MulDiv(Delta, 255, V); {MulDiv(a, b, c) = (a * b) div c)}
+
+  if S  = 0 then
+    H := 0   // Achromatic:  When s = 0, h is undefined but assigned the value 0
+  else begin    // Chromatic
+
+    with Color do
+    begin
+      if Red = V then  // degrees -- between yellow and magenta
+        H := MulDiv(Green - Blue, 60, Delta)
+      else begin
+        if Green = V then // between cyan and yellow
+          H := 120 + MulDiv(Blue - Red, 60, Delta)
+        else begin
+          if  Blue = V then // between magenta and cyan
+            H := 240 + MulDiv(Red  -Green, 60, Delta);
+        end;
+      end;
+    end;
+
+    if H < 0 then
+      H := H + 360;
+  end;
+end {RGBTripleToHSV};
+
+end.

@@ -1,0 +1,472 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <Title Value="Pick And Rule Kit"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N Value="True"/>
+      <OutDir Value="languages"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <MajorVersionNr Value="1"/>
+      <BuildNr Value="38"/>
+      <Language Value="0415"/>
+      <StringTable CompanyName="Łukasz Gąsior" FileDescription="Simple color picker and screen ruler" ProductName="Pick And Rule Kit" ProductVersion="1.0"/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="RunTimeTypeInfoControls"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LazControls"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="32">
+      <Unit0>
+        <Filename Value="picknic.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="picknic"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="9" Y="1"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FMain"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="main"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="122"/>
+        <CursorPos X="42" Y="160"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="main.lfm"/>
+        <ComponentName Value="FMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="20"/>
+        <CursorPos X="6" Y="20"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="desktop.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDesktop"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="desktop"/>
+        <EditorIndex Value="5"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="188"/>
+        <CursorPos X="41" Y="223"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\lazarus\lcl\include\canvas.inc"/>
+        <TopLine Value="1554"/>
+        <CursorPos X="12" Y="1572"/>
+        <UsageCount Value="3"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\lazarus\lcl\include\rasterimage.inc"/>
+        <TopLine Value="287"/>
+        <CursorPos X="1" Y="305"/>
+        <UsageCount Value="3"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\lazarus\lcl\include\customcombobox.inc"/>
+        <TopLine Value="1030"/>
+        <CursorPos X="1" Y="1048"/>
+        <UsageCount Value="5"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\lazarus\lcl\include\customcontrol.inc"/>
+        <TopLine Value="73"/>
+        <CursorPos X="1" Y="92"/>
+        <UsageCount Value="1"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\lazarus\lcl\include\wincontrol.inc"/>
+        <TopLine Value="4611"/>
+        <CursorPos X="1" Y="4628"/>
+        <UsageCount Value="1"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <TopLine Value="881"/>
+        <CursorPos X="1" Y="898"/>
+        <UsageCount Value="5"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <TopLine Value="2422"/>
+        <CursorPos X="18" Y="2439"/>
+        <UsageCount Value="6"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\lazarus\fpc\2.4.4\source\rtl\win\wininc\base.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="10"/>
+        <CursorPos X="6" Y="148"/>
+        <UsageCount Value="3"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="colorutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ColorUtils"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="67" Y="70"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\lazarus\lcl\include\trackbar.inc"/>
+        <TopLine Value="157"/>
+        <CursorPos X="1" Y="177"/>
+        <UsageCount Value="1"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="picktrans.pas"/>
+        <UnitName Value="picktrans"/>
+        <TopLine Value="1"/>
+        <CursorPos X="17" Y="12"/>
+        <UsageCount Value="30"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="gnugettext.pas"/>
+        <UnitName Value="gnugettext"/>
+        <TopLine Value="816"/>
+        <CursorPos X="22" Y="832"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="picknic.lrs"/>
+        <TopLine Value="1"/>
+        <CursorPos X="33" Y="1"/>
+        <UsageCount Value="2"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="unit1.pas"/>
+        <UnitName Value="Unit1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="22" Y="11"/>
+        <UsageCount Value="11"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <UnitName Value="Grids"/>
+        <TopLine Value="3762"/>
+        <CursorPos X="32" Y="3778"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="RegExpr.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="RegExpr"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1809"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="123"/>
+        <Loaded Value="True"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="C:\lazarus\lcl\translations.pas"/>
+        <UnitName Value="Translations"/>
+        <TopLine Value="42"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="1"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="languages.pas"/>
+        <UnitName Value="languages"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="27" Y="23"/>
+        <UsageCount Value="22"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="C:\lazarus\lcl\defaulttranslator.pas"/>
+        <UnitName Value="DefaultTranslator"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="56" Y="303"/>
+        <UsageCount Value="2"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="C:\lazarus\fpc\2.4.4\source\rtl\inc\objpash.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="169"/>
+        <CursorPos X="23" Y="185"/>
+        <UsageCount Value="2"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="J:\home\viman\Picknik\main.pas"/>
+        <UnitName Value="main"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="232"/>
+        <CursorPos X="3" Y="248"/>
+        <UsageCount Value="2"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="J:\home\viman\Picknik\colorutils.pas"/>
+        <UnitName Value="ColorUtils"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="3"/>
+        <UsageCount Value="1"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\Picknik2\colorutils.pas"/>
+        <UnitName Value="ColorUtils"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="1"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="J:\home\viman\Picknik\desktop.pas"/>
+        <UnitName Value="desktop"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="298"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="1"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="C:\lazarus\lcl\include\bitmapcanvas.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="33"/>
+        <CursorPos X="1" Y="49"/>
+        <UsageCount Value="1"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="iso639.pas"/>
+        <UnitName Value="Iso639"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="37"/>
+        <CursorPos X="42" Y="48"/>
+        <UsageCount Value="13"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="applang.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AppLang"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="46"/>
+        <CursorPos X="30" Y="70"/>
+        <UsageCount Value="104"/>
+        <Loaded Value="True"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="C:\lazarus\packager\registration\registerfcl.pas"/>
+        <UnitName Value="RegisterFCL"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="27"/>
+        <CursorPos X="3" Y="43"/>
+        <UsageCount Value="9"/>
+      </Unit31>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="desktop.pas"/>
+        <Caret Line="402" Column="10" TopLine="386"/>
+      </Position1>
+      <Position2>
+        <Filename Value="desktop.pas"/>
+        <Caret Line="762" Column="36" TopLine="751"/>
+      </Position2>
+      <Position3>
+        <Filename Value="desktop.pas"/>
+        <Caret Line="618" Column="30" TopLine="602"/>
+      </Position3>
+      <Position4>
+        <Filename Value="desktop.pas"/>
+        <Caret Line="272" Column="4" TopLine="250"/>
+      </Position4>
+      <Position5>
+        <Filename Value="desktop.pas"/>
+        <Caret Line="528" Column="17" TopLine="420"/>
+      </Position5>
+      <Position6>
+        <Filename Value="main.pas"/>
+        <Caret Line="9" Column="45" TopLine="1"/>
+      </Position6>
+      <Position7>
+        <Filename Value="colorutils.pas"/>
+        <Caret Line="802" Column="2" TopLine="782"/>
+      </Position7>
+      <Position8>
+        <Filename Value="colorutils.pas"/>
+        <Caret Line="799" Column="4" TopLine="782"/>
+      </Position8>
+      <Position9>
+        <Filename Value="main.pas"/>
+        <Caret Line="379" Column="32" TopLine="362"/>
+      </Position9>
+      <Position10>
+        <Filename Value="main.pas"/>
+        <Caret Line="1010" Column="48" TopLine="997"/>
+      </Position10>
+      <Position11>
+        <Filename Value="main.pas"/>
+        <Caret Line="376" Column="9" TopLine="360"/>
+      </Position11>
+      <Position12>
+        <Filename Value="main.pas"/>
+        <Caret Line="329" Column="1" TopLine="312"/>
+      </Position12>
+      <Position13>
+        <Filename Value="main.pas"/>
+        <Caret Line="362" Column="54" TopLine="347"/>
+      </Position13>
+      <Position14>
+        <Filename Value="colorutils.pas"/>
+        <Caret Line="77" Column="15" TopLine="61"/>
+      </Position14>
+      <Position15>
+        <Filename Value="main.pas"/>
+        <Caret Line="1024" Column="12" TopLine="1018"/>
+      </Position15>
+      <Position16>
+        <Filename Value="main.pas"/>
+        <Caret Line="332" Column="90" TopLine="316"/>
+      </Position16>
+      <Position17>
+        <Filename Value="desktop.pas"/>
+        <Caret Line="208" Column="51" TopLine="179"/>
+      </Position17>
+      <Position18>
+        <Filename Value="desktop.pas"/>
+        <Caret Line="206" Column="51" TopLine="179"/>
+      </Position18>
+      <Position19>
+        <Filename Value="colorutils.pas"/>
+        <Caret Line="70" Column="28" TopLine="55"/>
+      </Position19>
+      <Position20>
+        <Filename Value="colorutils.pas"/>
+        <Caret Line="374" Column="9" TopLine="358"/>
+      </Position20>
+      <Position21>
+        <Filename Value="main.pas"/>
+        <Caret Line="374" Column="133" TopLine="347"/>
+      </Position21>
+      <Position22>
+        <Filename Value="main.pas"/>
+        <Caret Line="376" Column="133" TopLine="349"/>
+      </Position22>
+      <Position23>
+        <Filename Value="colorutils.pas"/>
+        <Caret Line="445" Column="33" TopLine="427"/>
+      </Position23>
+      <Position24>
+        <Filename Value="colorutils.pas"/>
+        <Caret Line="400" Column="10" TopLine="396"/>
+      </Position24>
+      <Position25>
+        <Filename Value="colorutils.pas"/>
+        <Caret Line="431" Column="1" TopLine="413"/>
+      </Position25>
+      <Position26>
+        <Filename Value="main.pas"/>
+        <Caret Line="887" Column="44" TopLine="870"/>
+      </Position26>
+      <Position27>
+        <Filename Value="main.pas"/>
+        <Caret Line="884" Column="28" TopLine="868"/>
+      </Position27>
+      <Position28>
+        <Filename Value="main.pas"/>
+        <Caret Line="883" Column="28" TopLine="867"/>
+      </Position28>
+      <Position29>
+        <Filename Value="main.pas"/>
+        <Caret Line="870" Column="5" TopLine="867"/>
+      </Position29>
+      <Position30>
+        <Filename Value="picknic.lpr"/>
+        <Caret Line="1" Column="15" TopLine="1"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="10"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="picknic"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

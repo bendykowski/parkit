@@ -1,0 +1,83 @@
+unit Iso639;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Windows;
+
+function Iso639ToPrimaryLangID(const S: string): LANGID;
+
+implementation
+
+uses
+  SysUtils, Classes;
+
+var
+  Iso639Languages: TStringList = nil;
+
+function GetLocaleDataW(ID: LCID; Flag: DWORD): WideString;
+var
+  Buffer: array[0..1023] of WideChar;
+begin
+  Buffer[0] := #0;
+  SetString(Result, Buffer, GetLocaleInfoW(ID, Flag, Buffer, SizeOf(Buffer) div 2));
+end;
+
+function LangIDFromLcID(ID: LCID): LANGID;
+begin
+  Result := LANGID(ID);
+end;
+
+function PrimaryLangID(LangID: LANGID): LANGID;
+begin
+  Result := LangID and $3FF;
+end;
+
+procedure InitializeIso639Languages;
+var
+  I: Integer;
+  ALocaleID: LCID;
+  ALangID: LANGID;
+  S: string;
+begin
+  Iso639Languages := TStringList.Create;
+  try
+    Iso639Languages.Sorted := True;
+    for I := 0 to Iso639Languages.Count - 1 do
+    begin
+      ALocaleID := Iso639Languages.LocaleID[I];
+      ALangID := PrimaryLangID(LangIDFromLcID(ALocaleID));
+      if Iso639Languages.IndexOfObject(TObject(ALangID)) = -1 then
+      begin
+        S := GetLocaleDataW(ALocaleID, LOCALE_SISO639LANGNAME);
+        Iso639Languages.AddObject(S, TObject(ALangID));
+      end;
+    end;
+  except
+    FreeAndNil(Iso639Languages);
+    raise;
+  end;
+end;
+
+function Iso639ToPrimaryLangID(const S: string): LANGID;
+var
+  I: Integer;
+begin
+  Result := 0;
+
+  if not Assigned(Iso639Languages) then
+    InitializeIso639Languages;
+
+  I := Iso639Languages.IndexOf(S);
+  if I <> -1 then
+    Result := LANGID(Iso639Languages.Objects[I]);
+end;
+
+initialization
+
+finalization
+  FreeAndNil(Iso639Languages);
+
+end.

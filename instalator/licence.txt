@@ -1,0 +1,5 @@
+Pick And Rule Kit jest programem FREEWARE. Mo¿esz go kopiowaæ i u¿ywaæ za darmo. Zabronione jest wprowadzanie modyfikacji do programu oraz jego sprzeda¿.
+
+Program dostarczony jest TAKI JAKI JEST oznacza to, ¿e autor nie bierze odpowiedzialnoœci za szkody wynik³e z jego u¿ytkowania, u¿ytkownik decyduj¹c siê na u¿ywanie programu robi to na w³asn¹ odpowiedzialnoœæ.
+
+Konwersja pomiêdzy przestrzeniami kolorów CMYK i RGB jest wykonywana algorytmem uproszczonym, rzeczywiste kolory mog¹ ró¿niæ siê od wygenerowanych przez program. By dokonaæ dok³adnej konwersji u¿yj profesjonalnego programu graficznego z obs³ug¹ profili ICC.

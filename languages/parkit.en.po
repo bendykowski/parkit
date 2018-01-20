@@ -1,0 +1,518 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Łukasz Gąsior <ewilku@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: TFDESKTOP.BEXIT.CAPTION
+msgid "Zakończ"
+msgstr "Finish"
+
+#: TFDESKTOP.CAPTION
+msgid "Desktop"
+msgstr "Desktop"
+
+#: TFDESKTOP.GBCOORDINATES.CAPTION
+msgid "Współrzędne"
+msgstr "Coordinates"
+
+#: TFDESKTOP.GBMEASUREMENT.CAPTION
+msgid "Wymiary"
+msgstr "Measurement"
+
+#: TFDESKTOP.LBEGCAPTION.CAPTION
+msgctxt "TFDESKTOP.LBEGCAPTION.CAPTION"
+msgid "Początek:"
+msgstr "Beginning:"
+
+#: TFDESKTOP.LBEGCOORDINATES.CAPTION
+msgctxt "TFDESKTOP.LBEGCOORDINATES.CAPTION"
+msgid "(0,0)"
+msgstr "(0,0)"
+
+#: TFDESKTOP.LCOLOR.CAPTION
+msgid "#000000"
+msgstr "#000000"
+
+#: TFDESKTOP.LDIAGONAL.CAPTION
+msgctxt "TFDESKTOP.LDIAGONAL.CAPTION"
+msgid "0"
+msgstr "0"
+
+#: TFDESKTOP.LDIAGONALCAPTION.CAPTION
+msgctxt "TFDESKTOP.LDIAGONALCAPTION.CAPTION"
+msgid "Przekątna:"
+msgstr "Diagonal:"
+
+#: TFDESKTOP.LENDCAPTION.CAPTION
+msgctxt "TFDESKTOP.LENDCAPTION.CAPTION"
+msgid "Koniec:"
+msgstr "End:"
+
+#: TFDESKTOP.LENDCOORDINATES.CAPTION
+msgctxt "TFDESKTOP.LENDCOORDINATES.CAPTION"
+msgid "(0,0)"
+msgstr "(0,0)"
+
+#: TFDESKTOP.LHEIGHT.CAPTION
+msgctxt "TFDESKTOP.LHEIGHT.CAPTION"
+msgid "0"
+msgstr "0"
+
+#: TFDESKTOP.LHEIGHTCAPTION.CAPTION
+msgctxt "TFDESKTOP.LHEIGHTCAPTION.CAPTION"
+msgid "Wysokość:"
+msgstr "Height:"
+
+#: TFDESKTOP.LPOSITION.CAPTION
+msgctxt "TFDESKTOP.LPOSITION.CAPTION"
+msgid "(0,0)"
+msgstr "(0,0)"
+
+#: TFDESKTOP.LWIDTH.CAPTION
+msgctxt "TFDESKTOP.LWIDTH.CAPTION"
+msgid "0"
+msgstr "0"
+
+#: TFDESKTOP.LWIDTHCAPTION.CAPTION
+msgctxt "TFDESKTOP.LWIDTHCAPTION.CAPTION"
+msgid "Szerokość:"
+msgstr "Width:"
+
+#: TFMAIN.BCOPY.CAPTION
+msgid "Kopiuj"
+msgstr "Copy"
+
+#: TFMAIN.BCOPY.HINT
+msgid "Kopiowanie wyświetlonego kodu koloru do schowka"
+msgstr "Copy displying colour code into clipboard"
+
+#: TFMAIN.BPICK.CAPTION
+msgid "&Pipeta"
+msgstr "&Pipette"
+
+#: TFMAIN.BPICK.HINT
+msgid "Lewy p. myszy - pobranie koloru"
+msgstr "Left mouse b. - pick a colour"
+
+#: TFMAIN.BRULER.CAPTION
+msgid "&Linijka"
+msgstr "&Ruler"
+
+#: TFMAIN.BRULER.HINT
+msgid "Naciśnij, przeciągnij i puść lewy p. myszy - mierzenie"
+msgstr "Push, drag and release left mouse b. - measure"
+
+#: TFMAIN.BSET.CAPTION
+msgid "Ustaw"
+msgstr "Set"
+
+#: TFMAIN.BSET.HINT
+msgid "Ustawienie aktywnego kolor według wpisanego kodu"
+msgstr "Set active colour according to written code"
+
+#: TFMAIN.CAPTION
+msgid "PAR Kit"
+msgstr "PAR Kit"
+
+#: TFMAIN.CBCOLORFORMAT.HINT
+msgid "Format kodu koloru"
+msgstr "Colour code format"
+
+#: TFMAIN.CBCOLORFORMAT.TEXT
+msgid "HTML"
+msgstr "HTML"
+
+#: TFMAIN.CBHIDETOTRAY.CAPTION
+msgid "Minimalizuj do traya"
+msgstr "Minimize into a system tray"
+
+#: TFMAIN.CBLANGUAGE.TEXT
+msgid "Polski"
+msgstr "Polski"
+
+#: TFMAIN.CBONTOP.CAPTION
+msgid "Zawsze na wierzchu"
+msgstr "Always on the top"
+
+#: TFMAIN.CBSHOWTRAY.CAPTION
+msgid "Pokaż ikonę w trayu"
+msgstr "Show icon in a system tray"
+
+#: TFMAIN.CBUSECAPITALLETTERS.CAPTION
+msgid "Używaj wielkich liter w kodzie koloru"
+msgstr "Use capital letters in colour code"
+
+#: TFMAIN.CBUSESAFEWEBCOLORS.CAPTION
+msgid "Używaj bezpiecznej palety kolorów"
+msgstr "Use web safe colours palette"
+
+#: TFMAIN.EBANKACCOUNT.TEXT
+msgctxt "TFMAIN.EBANKACCOUNT.TEXT"
+msgid "89 1140 2004 0000 3602 4388 0717"
+msgstr "PL89 1140 2004 0000 3602 4388 0717"
+
+#: TFMAIN.EPAYPALACCOUNT.TEXT
+msgctxt "TFMAIN.EPAYPALACCOUNT.TEXT"
+msgid "lukasz.gasior@gmail.com"
+msgstr "lukasz.gasior@gmail.com"
+
+#: TFMAIN.GBCOORDINATES.CAPTION
+msgid "Współrzędne:"
+msgstr "Coordinates:"
+
+#: TFMAIN.GBMEASUREMENT.CAPTION
+msgid "Wymiary:"
+msgstr "Measurement:"
+
+#: TFMAIN.IHSVREFRESH.HINT
+msgctxt "TFMAIN.IHSVREFRESH.HINT"
+msgid "Przywróć aktualny kolor"
+msgstr "Return current colour"
+
+#: TFMAIN.IRGBREFRESH.HINT
+msgctxt "TFMAIN.IRGBREFRESH.HINT"
+msgid "Przywróć aktualny kolor"
+msgstr "Return current colour"
+
+#: TFMAIN.ISAFECOLOR.HINT
+msgctxt "TFMAIN.ISAFECOLOR.HINT"
+msgid "Kolor spoza bezpiecznej palety kolorów"
+msgstr "Colour beyond the web safe colours palette"
+
+#: TFMAIN.LALPHAVALUE.CAPTION
+msgid "0%"
+msgstr "0%"
+
+#: TFMAIN.LAPPAUTHOR.CAPTION
+msgid "© 2011 Łukasz Gąsior"
+msgstr "© 2011 Łukasz Gąsior"
+
+#: TFMAIN.LAPPGREETINGS.CAPTION
+msgid "Dla Anulki..."
+msgstr "For Annie..."
+
+#: TFMAIN.LAPPMAIL.CAPTION
+#| msgid "admin@viman.pl"
+msgctxt "TFMAIN.LAPPMAIL.CAPTION"
+msgid "lukasz.gasior@gmail.com"
+msgstr "lukasz.gasior@gmail.com"
+
+#: TFMAIN.LAPPMAILCAPTION.CAPTION
+msgid "E-mail:"
+msgstr "E-mail:"
+
+#: TFMAIN.LAPPNAME.CAPTION
+msgid "Pick And Rule Kit 1.0"
+msgstr "Pick And Rule Kit 1.0"
+
+#: TFMAIN.LAPPWWW.CAPTION
+msgid "http://viman.pl"
+msgstr "http://viman.pl"
+
+#: TFMAIN.LAPPWWWCAPTION.CAPTION
+msgid "Strona www:"
+msgstr "Strona www:"
+
+#: TFMAIN.LBANKCAPTION.CAPTION
+msgid "Konto bankowe:"
+msgstr "Bank account:"
+
+#: TFMAIN.LBPOINT.CAPTION
+msgctxt "TFMAIN.LBPOINT.CAPTION"
+msgid "(0,0)"
+msgstr "(0,0)"
+
+#: TFMAIN.LBPOINTCAPTION.CAPTION
+msgctxt "TFMAIN.LBPOINTCAPTION.CAPTION"
+msgid "Początek:"
+msgstr "Beginning:"
+
+#: TFMAIN.LCOLORCURRENT.CAPTION
+msgid "Aktualny kolor:"
+msgstr "Current colour:"
+
+#: TFMAIN.LCOLORHISTORY.CAPTION
+msgid "Historia koloru:"
+msgstr "Colour history:"
+
+#: TFMAIN.LDELAYMAX.CAPTION
+msgid "5s"
+msgstr "5s"
+
+#: TFMAIN.LDELAYMIN.CAPTION
+msgid "0s"
+msgstr "0s"
+
+#: TFMAIN.LDIAGONAL.CAPTION
+msgctxt "TFMAIN.LDIAGONAL.CAPTION"
+msgid "0"
+msgstr "0"
+
+#: TFMAIN.LDIAGONALCAPTION.CAPTION
+msgctxt "TFMAIN.LDIAGONALCAPTION.CAPTION"
+msgid "Przekątna:"
+msgstr "Diagonal:"
+
+#: TFMAIN.LEPOINT.CAPTION
+msgctxt "TFMAIN.LEPOINT.CAPTION"
+msgid "(0,0)"
+msgstr "(0,0)"
+
+#: TFMAIN.LEPOINTCAPTION.CAPTION
+msgctxt "TFMAIN.LEPOINTCAPTION.CAPTION"
+msgid "Koniec:"
+msgstr "End:"
+
+#: TFMAIN.LHEIGHT.CAPTION
+msgctxt "TFMAIN.LHEIGHT.CAPTION"
+msgid "0"
+msgstr "0"
+
+#: TFMAIN.LHEIGHTCAPTION.CAPTION
+msgctxt "TFMAIN.LHEIGHTCAPTION.CAPTION"
+msgid "Wysokość:"
+msgstr "Height:"
+
+#: TFMAIN.LHSVCOLOR.CAPTION
+msgid "Składowe HSV:"
+msgstr "HSV components:"
+
+#: TFMAIN.LHSVCOLORNEW.CAPTION
+msgctxt "TFMAIN.LHSVCOLORNEW.CAPTION"
+msgid "Nowy:"
+msgstr "New:"
+
+#: TFMAIN.LHSVCOLORORYGINAL.CAPTION
+msgctxt "TFMAIN.LHSVCOLORORYGINAL.CAPTION"
+msgid "Aktualny:"
+msgstr "Current:"
+
+#: TFMAIN.LHSVSETHUE.CAPTION
+msgid "H:"
+msgstr "H:"
+
+#: TFMAIN.LHSVSETSATURATION.CAPTION
+msgid "S:"
+msgstr "S:"
+
+#: TFMAIN.LHSVSETVALUE.CAPTION
+msgid "V:"
+msgstr "V:"
+
+#: TFMAIN.LLANGUAGECAPTION.CAPTION
+msgid "Język:"
+msgstr "Language:"
+
+#: TFMAIN.LPAYPALCAPTION.CAPTION
+msgid "Konto PayPal:"
+msgstr "PayPal account:"
+
+#: TFMAIN.LRGBCOLOR.CAPTION
+msgid "Składowe RGB:"
+msgstr "RGB components:"
+
+#: TFMAIN.LRGBCOLORNEW.CAPTION
+msgctxt "TFMAIN.LRGBCOLORNEW.CAPTION"
+msgid "Nowy:"
+msgstr "New:"
+
+#: TFMAIN.LRGBCOLORORYGINAL.CAPTION
+msgctxt "TFMAIN.LRGBCOLORORYGINAL.CAPTION"
+msgid "Aktualny:"
+msgstr "Current:"
+
+#: TFMAIN.LSETBLUE.CAPTION
+msgid "B:"
+msgstr "B:"
+
+#: TFMAIN.LSETGREEN.CAPTION
+msgid "G:"
+msgstr "G:"
+
+#: TFMAIN.LSETRED.CAPTION
+msgid "R:"
+msgstr "R:"
+
+#: TFMAIN.LSUPPORTDESCRIPTION.CAPTION
+msgid "Jeśli podoba Ci się ten program, wspomóż mnie dowolnym datkiem. Zmotywuje mnie to do dalszych prac nad jego rozwojem."
+msgstr "If you like this program support me any donation you want. This will motivate me to further developing it."
+
+#: TFMAIN.LTRANSPARENCY.CAPTION
+msgid "Przezroczystość (2000/XP):"
+msgstr "Transparency (2000/XP):"
+
+#: TFMAIN.LWIDTH.CAPTION
+msgctxt "TFMAIN.LWIDTH.CAPTION"
+msgid "0"
+msgstr "0"
+
+#: TFMAIN.LWIDTHCAPTION.CAPTION
+msgctxt "TFMAIN.LWIDTHCAPTION.CAPTION"
+msgid "Szerokość:"
+msgstr "Width:"
+
+#: TFMAIN.MICLOSE.CAPTION
+msgid "Zamknij"
+msgstr "Exit"
+
+#: TFMAIN.MILINIJKA.CAPTION
+msgctxt "TFMAIN.MILINIJKA.CAPTION"
+msgid "Linijka"
+msgstr "Ruler"
+
+#: TFMAIN.MIPICKER.CAPTION
+msgctxt "TFMAIN.MIPICKER.CAPTION"
+msgid "Pipeta"
+msgstr "Pipette"
+
+#: TFMAIN.MITEMBREAK.CAPTION
+msgctxt "TFMAIN.MITEMBREAK.CAPTION"
+msgid "-"
+msgstr "-"
+
+#: TFMAIN.MMICLOSE.CAPTION
+msgid "Wyjdź"
+msgstr "Exit"
+
+#: TFMAIN.MMIINFO.CAPTION
+msgid "O aplikacji"
+msgstr "About..."
+
+#: TFMAIN.MMILINE.CAPTION
+msgctxt "TFMAIN.MMILINE.CAPTION"
+msgid "-"
+msgstr "-"
+
+#: TFMAIN.MMILINE2.CAPTION
+msgctxt "TFMAIN.MMILINE2.CAPTION"
+msgid "-"
+msgstr "-"
+
+#: TFMAIN.MMIOTHER.CAPTION
+msgid "»"
+msgstr "»"
+
+#: TFMAIN.MMIPICKER.CAPTION
+msgctxt "TFMAIN.MMIPICKER.CAPTION"
+msgid "Pipeta"
+msgstr "Pipette"
+
+#: TFMAIN.MMIRULER.CAPTION
+msgctxt "TFMAIN.MMIRULER.CAPTION"
+msgid "Linijka"
+msgstr "Ruler"
+
+#: TFMAIN.MMISETTINGS.CAPTION
+msgid "Ustawienia"
+msgstr "Settings"
+
+#: TFMAIN.MMISUPPORT.CAPTION
+msgid "Wesprzyj"
+msgstr "Support"
+
+#: TFMAIN.SBHISTRETURN.HINT
+msgid "Powrót do głównego okna pipety"
+msgstr "Return to the main window of pipette"
+
+#: TFMAIN.SBHSV.HINT
+msgid "Edycja składowych HSV aktualnego koloru"
+msgstr "Edition of HSV components of current colour"
+
+#: TFMAIN.SBHSVABANDON.HINT
+msgctxt "TFMAIN.SBHSVABANDON.HINT"
+msgid "Porzuć wprowadzone zmiany"
+msgstr "Leave set changes"
+
+#: TFMAIN.SBHSVCONFIRM.HINT
+msgctxt "TFMAIN.SBHSVCONFIRM.HINT"
+msgid "Zatwierdź zmianę koloru"
+msgstr "Confirm colour change"
+
+#: TFMAIN.SBRGB.HINT
+msgid "Edycja składowych RGB aktualnego koloru"
+msgstr "Edition of RGB components of current colour"
+
+#: TFMAIN.SBRGBABANDON.HINT
+msgctxt "TFMAIN.SBRGBABANDON.HINT"
+msgid "Porzuć wprowadzone zmiany"
+msgstr "Leave set changes"
+
+#: TFMAIN.SBRGBCONFIRM.HINT
+msgctxt "TFMAIN.SBRGBCONFIRM.HINT"
+msgid "Zatwierdź zmianę koloru"
+msgstr "Confirm colour change"
+
+#: TFMAIN.SBUNDO.HINT
+msgid "Cofnięcie modyfikacji koloru do 5 wstecz"
+msgstr "Undo colour modifications up to 5 back"
+
+#: TFMAIN.SEHSVSETHUE.HINT
+msgctxt "TFMAIN.SEHSVSETHUE.HINT"
+msgid "Odcień"
+msgstr "Hue"
+
+#: TFMAIN.SEHSVSETSATURATION.HINT
+msgctxt "TFMAIN.SEHSVSETSATURATION.HINT"
+msgid "Nasycenie"
+msgstr "Saturation"
+
+#: TFMAIN.SEHSVSETVALUE.HINT
+msgctxt "TFMAIN.SEHSVSETVALUE.HINT"
+msgid "Wartość"
+msgstr "Value"
+
+#: TFMAIN.SESETBLUE.HINT
+msgctxt "TFMAIN.SESETBLUE.HINT"
+msgid "Błękit"
+msgstr "Blue"
+
+#: TFMAIN.SESETGREEN.HINT
+msgctxt "TFMAIN.SESETGREEN.HINT"
+msgid "Zieleń"
+msgstr "Green"
+
+#: TFMAIN.SESETRED.HINT
+msgctxt "TFMAIN.SESETRED.HINT"
+msgid "Czerwień"
+msgstr "Red"
+
+#: TFMAIN.TBHSVSETHUE.HINT
+msgctxt "TFMAIN.TBHSVSETHUE.HINT"
+msgid "Odcień"
+msgstr "Hue"
+
+#: TFMAIN.TBHSVSETSATURATION.HINT
+msgctxt "TFMAIN.TBHSVSETSATURATION.HINT"
+msgid "Nasycenie"
+msgstr "Saturation"
+
+#: TFMAIN.TBHSVSETVALUE.HINT
+msgctxt "TFMAIN.TBHSVSETVALUE.HINT"
+msgid "Wartość"
+msgstr "Value"
+
+#: TFMAIN.TBPICKDELAY.HINT
+msgid "Opóźnienie aktywacji pipety/linijki"
+msgstr "Delay activation of pipette/rule"
+
+#: TFMAIN.TBSETBLUE.HINT
+msgctxt "TFMAIN.TBSETBLUE.HINT"
+msgid "Błękit"
+msgstr "Blue"
+
+#: TFMAIN.TBSETGREEN.HINT
+msgctxt "TFMAIN.TBSETGREEN.HINT"
+msgid "Zieleń"
+msgstr "Green"
+
+#: TFMAIN.TBSETRED.HINT
+msgctxt "TFMAIN.TBSETRED.HINT"
+msgid "Czerwień"
+msgstr "Red"
+
